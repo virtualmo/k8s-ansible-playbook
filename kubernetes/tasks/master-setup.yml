@@ -29,6 +29,13 @@
     state: link
     mode: 0644
 
+- name: Symlink the kubectl admin.conf to login user ~/.kube/conf.
+  file:
+    src: /etc/kubernetes/admin.conf
+    dest: /home/{{ ansible_user_id }}/.kube/config
+    state: link
+    mode: 0644
+
 - name: Configure Flannel networking.
   command: "{{ item }}"
   with_items:
