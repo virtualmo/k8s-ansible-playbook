@@ -29,6 +29,12 @@
     state: link
     mode: 0644
 
+- name: Ensure .kube directory exists on login user.
+  file:
+    path: /hoom/{{ default_user }}/.kube
+    state: directory
+    mode: 0755
+
 - name: Symlink the kubectl admin.conf to login user ~/.kube/conf.
   file:
     src: /etc/kubernetes/admin.conf
