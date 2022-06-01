@@ -1,4 +1,4 @@
 [k8s_nodes]
-x.x.x.x ansible_user=root kubernetes_role="master"
-x.x.x.x ansible_user=root kubernetes_role="node"
-x.x.x.x ansible_user=root kubernetes_role="node"
+10.197.140.21 ansible_user=labuser kubernetes_role="master"
+10.197.140.22 ansible_user=labuser kubernetes_role="node"
+10.197.140.23 ansible_user=labuser kubernetes_role="node"
