@@ -32,7 +32,7 @@
 - name: Symlink the kubectl admin.conf to login user ~/.kube/conf.
   file:
     src: /etc/kubernetes/admin.conf
-    dest: /home/{{ lookup('env', 'USER') }}/.kube/config
+    dest: /home/{{ default_user }}/.kube/config
     state: link
     mode: 0644
 
