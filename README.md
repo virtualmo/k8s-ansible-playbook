@@ -27,12 +27,6 @@ ansible [core 2.12.1]
   libyaml = True
 ```
 
-### Roles
-
-There is 1 roles that is part of this repository.
-
-1. **k8s-role**
-
 
 ### Ansible Roles Usage
 
