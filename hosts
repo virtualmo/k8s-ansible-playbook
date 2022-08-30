@@ -1,7 +1,7 @@
 [k8s_nodes]
-10.197.140.21 ansible_user=labuser kubernetes_role="master"
-10.197.140.22 ansible_user=labuser kubernetes_role="node"
-10.197.140.23 ansible_user=labuser kubernetes_role="node"
+10.197.140.41 ansible_user=labuser kubernetes_role="master"
+10.197.140.42 ansible_user=labuser kubernetes_role="node"
+10.197.140.43 ansible_user=labuser kubernetes_role="node"
 
 [k8s_nodes:vars]
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
